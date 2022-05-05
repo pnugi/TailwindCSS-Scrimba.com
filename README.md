@@ -1,3 +1,4 @@
+
 # Scrimba - Learn Tailwind CSS
 https://scrimba.com/learn/tailwind
 
@@ -20,4 +21,6 @@ https://scrimba.com/learn/tailwind
 19. Other Utilities<br>
 20. Input Component Challenge<br>
 21. Employee Card Challenge<br>
-22. Final Course Project - Landing Page
+22. Final Course Project - Landing Page<br>
+
+# ADDED: Healthy juice-bar tailwind app (from some youtube tutorial) also
