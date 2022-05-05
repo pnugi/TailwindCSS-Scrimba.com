@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="tailwind.css" rel="stylesheet">
+    <script type="text/javascript" src="tailwind.config.js"></script>
+</head>
+
+<body class="bg-gray-200 font-sans flex flex-col items-center">
+    <header class="bg-indigo-700 w-full px-4 py-3 flex justify-center border-b-4 border-pink-500">
+        <div class="max-w-4xl w-full">
+            <div class="flex items-center justify-between text-pink-500">
+
+                <!-- Logo -->
+
+                <svg class="h-8 w-32 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 262 33">
+                    <g fill-rule="evenodd" clip-path="url(#prefix__clip0)" clip-rule="evenodd">
+                        <path fill="#38bdf8"
+                            d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z" />
+                        <path fill="#fff"
+                            d="M80.996 13.652h-4.712v9.12c0 2.432 1.596 2.394 4.712 2.242V28.7c-6.308.76-8.816-.988-8.816-5.928v-9.12h-3.496V9.7h3.496V4.596l4.104-1.216V9.7h4.712v3.952zM98.958 9.7h4.104v19h-4.104v-2.736c-1.444 2.014-3.686 3.23-6.65 3.23-5.168 0-9.462-4.37-9.462-9.994 0-5.662 4.294-9.994 9.462-9.994 2.964 0 5.206 1.216 6.65 3.192V9.7zm-6.004 15.58c3.42 0 6.004-2.546 6.004-6.08 0-3.534-2.584-6.08-6.004-6.08-3.42 0-6.004 2.546-6.004 6.08 0 3.534 2.584 6.08 6.004 6.08zm16.948-18.43c-1.444 0-2.622-1.216-2.622-2.622a2.627 2.627 0 012.622-2.622 2.627 2.627 0 012.622 2.622c0 1.406-1.178 2.622-2.622 2.622zM107.85 28.7v-19h4.104v19h-4.104zm8.854 0V.96h4.104V28.7h-4.104zm30.742-19h4.332l-5.966 19h-4.028l-3.952-12.806-3.99 12.806h-4.028l-5.966-19h4.332l3.686 13.11 3.99-13.11h3.914l3.952 13.11 3.724-13.11zm9.424-2.85c-1.444 0-2.622-1.216-2.622-2.622a2.627 2.627 0 012.622-2.622 2.627 2.627 0 012.622 2.622c0 1.406-1.178 2.622-2.622 2.622zm-2.052 21.85v-19h4.104v19h-4.104zm18.848-19.494c4.256 0 7.296 2.888 7.296 7.828V28.7h-4.104V17.452c0-2.888-1.672-4.408-4.256-4.408-2.698 0-4.826 1.596-4.826 5.472V28.7h-4.104v-19h4.104v2.432c1.254-1.976 3.306-2.926 5.89-2.926zM200.418 2.1h4.104v26.6h-4.104v-2.736c-1.444 2.014-3.686 3.23-6.65 3.23-5.168 0-9.462-4.37-9.462-9.994 0-5.662 4.294-9.994 9.462-9.994 2.964 0 5.206 1.216 6.65 3.192V2.1zm-6.004 23.18c3.42 0 6.004-2.546 6.004-6.08 0-3.534-2.584-6.08-6.004-6.08-3.42 0-6.004 2.546-6.004 6.08 0 3.534 2.584 6.08 6.004 6.08zm23.864 3.914c-5.738 0-10.032-4.37-10.032-9.994 0-5.662 4.294-9.994 10.032-9.994 3.724 0 6.954 1.938 8.474 4.902l-3.534 2.052c-.836-1.786-2.698-2.926-4.978-2.926-3.344 0-5.89 2.546-5.89 5.966 0 3.42 2.546 5.966 5.89 5.966 2.28 0 4.142-1.178 5.054-2.926l3.534 2.014c-1.596 3.002-4.826 4.94-8.55 4.94zm15.314-14.25c0 3.458 10.222 1.368 10.222 8.398 0 3.8-3.306 5.852-7.41 5.852-3.8 0-6.536-1.71-7.752-4.446l3.534-2.052c.608 1.71 2.128 2.736 4.218 2.736 1.824 0 3.23-.608 3.23-2.128 0-3.382-10.222-1.482-10.222-8.284 0-3.572 3.078-5.814 6.954-5.814 3.116 0 5.7 1.444 7.03 3.952l-3.458 1.938c-.684-1.482-2.014-2.166-3.572-2.166-1.482 0-2.774.646-2.774 2.014zm17.518 0c0 3.458 10.222 1.368 10.222 8.398 0 3.8-3.306 5.852-7.41 5.852-3.8 0-6.536-1.71-7.752-4.446l3.534-2.052c.608 1.71 2.128 2.736 4.218 2.736 1.824 0 3.23-.608 3.23-2.128 0-3.382-10.222-1.482-10.222-8.284 0-3.572 3.078-5.814 6.954-5.814 3.116 0 5.7 1.444 7.03 3.952l-3.458 1.938c-.684-1.482-2.014-2.166-3.572-2.166-1.482 0-2.774.646-2.774 2.014z" />
+                    </g>
+                    <defs>
+                        <clipPath id="prefix__clip0">
+                            <path fill="#fff" d="M0 0h262v32.4H0z" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <!-- Hamburger menu -->
+                <button class="text-gray-500 hover:text-gray-200 sm:hidden"><svg class="h-8 fill-current"
+                        viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41,14H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,14Z" fill="#6f7380" />
+                        <path d="M41,26H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,26Z" fill="#6f7380" />
+                        <path d="M41,38H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,38Z" fill="#6f7380" />
+                    </svg></button>
+            </div>
+            <div class="my-4">
+
+                <!-- Header text -->
+                <h1 class="text-2xl text-indigo-100">Want to learn Tailwind CSS?</h1>
+                <p class="text-sm text-indigo-200">Tailwind is the fastest growing utility-first CSS framework. Let's
+                    learn it step by step</p>
+
+                <!-- Enroll now -->
+                <div class="relative mt-4 flex">
+                    <div>
+                        <a href="a"
+                            class="bg-pink-500 text-indigo-100 font-bold mt-2 px-4 py-2 rounded-full text-xs uppercase">Enroll
+                            now</a>
+                    </div>
+                    <!-- Tailwind logo-->
+                    <div
+                        class="absolute right-0 bg-white rounded-full flex justify-center items-center p-5 border-4 border-pink-500">
+                        <svg class="h-16 w-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33">
+                            <g clip-path="url(#prefix__clip0)">
+                                <path fill="#38bdf8" fill-rule="evenodd"
+                                    d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                                    clip-rule="evenodd" />
+                            </g>
+                            <defs>
+                                <clipPath id="prefix__clip0">
+                                    <path fill="#fff" d="M0 0h54v32.4H0z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-16 w-full flex flex-col items-center">
+        <div class="max-w-4xl mx-4">
+            <!-- Main text -->
+            <h2 class="font-bold text-xl text-indigo-700 border-b border-indigo-200 pb-1">How It Works</h2>
+            <p class="text-sm my-4 text-gray-600 ">Tailwind is designed for rapid development of modern
+                applications. At
+                its core, it is a robust
+                mobile-first design system built with developer experience in mind. After Tailwind CSS, you will find it
+                difficult to go back to use anything else. </p>
+            <h2 class="font-bold text-xl text-indigo-700 border-b border-indigo-200 pb-1">Advantages</h2>
+
+            <!-- Cards-->
+            <div class="flex flex-col sm:flex-row sm:-mx-2">
+                <div class="mt-4 sm:w-1/3">
+                    <div
+                        class="bg-white h-full p-8 border-b-4 border-pink-500 rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8">
+                        <div class="bg-gray-200 w-16 text-indigo-700 rounded-full p-2">
+                            <svg class="h-12 w-12 pt-1 fill-current" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M487.915,3.52C485.888,1.28,483.008,0,480,0H32c-3.029,0-5.888,1.28-7.915,3.52c-2.027,2.219-3.008,5.205-2.709,8.213
+                                                L64.043,438.4c0.405,4.16,3.243,7.723,7.232,9.045l192,64c1.088,0.384,2.24,0.555,3.371,0.555c1.28,0,2.539-0.235,3.776-0.683
+                                                l170.667-64c3.797-1.408,6.464-4.885,6.869-8.917l42.667-426.667C490.923,8.747,489.941,5.739,487.915,3.52z M427.349,429.675
+                                                l-160.917,60.352L84.565,429.397L43.755,21.333h424.427L427.349,429.675z" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M402.816,110.485c-2.027-2.411-5.035-3.797-8.171-3.797h-256c-5.888,0-10.667,4.779-10.667,10.667
+                                                s4.779,10.667,10.667,10.667h243.307l-14.827,85.312H149.312c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667
+                                                h214.101l-20.907,120.171l-76.075,28.523l-86.549-28.864l-9.451-47.253c-1.131-5.76-6.699-9.536-12.544-8.363
+                                                c-5.76,1.152-9.515,6.763-8.363,12.544l10.667,53.333c0.747,3.755,3.456,6.805,7.083,8.021l96,32
+                                                c1.088,0.384,2.24,0.555,3.371,0.555c1.28,0,2.539-0.235,3.755-0.661l85.333-32c3.541-1.344,6.123-4.437,6.763-8.171
+                                                l42.667-245.333C405.696,116.075,404.843,112.896,402.816,110.485z" />
+                                    </g>
+                            </svg>
+                        </div>
+                        <div class="mt-4 font-bold">No Custom CSS</div>
+                        <div class="text-center mt-2 text-gray-600">Tailwind's advanced class extraction will leave your
+                            project free
+                            of
+                            custom CSS
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mt-4 sm:w-1/3">
+                    <div
+                        class="bg-white h-full p-8 border-b-4 border-pink-500 rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8">
+                        <div class="bg-gray-200 w-16 text-indigo-700 rounded-full p-2">
+                            <svg class="h-12 w-12 pt-1 fill-current" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M487.915,3.52C485.888,1.28,483.008,0,480,0H32c-3.029,0-5.888,1.28-7.915,3.52c-2.027,2.219-3.008,5.205-2.709,8.213
+                                                L64.043,438.4c0.405,4.16,3.243,7.723,7.232,9.045l192,64c1.088,0.384,2.24,0.555,3.371,0.555c1.28,0,2.539-0.235,3.776-0.683
+                                                l170.667-64c3.797-1.408,6.464-4.885,6.869-8.917l42.667-426.667C490.923,8.747,489.941,5.739,487.915,3.52z M427.349,429.675
+                                                l-160.917,60.352L84.565,429.397L43.755,21.333h424.427L427.349,429.675z" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M402.816,110.485c-2.027-2.411-5.035-3.797-8.171-3.797h-256c-5.888,0-10.667,4.779-10.667,10.667
+                                                s4.779,10.667,10.667,10.667h243.307l-14.827,85.312H149.312c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667
+                                                h214.101l-20.907,120.171l-76.075,28.523l-86.549-28.864l-9.451-47.253c-1.131-5.76-6.699-9.536-12.544-8.363
+                                                c-5.76,1.152-9.515,6.763-8.363,12.544l10.667,53.333c0.747,3.755,3.456,6.805,7.083,8.021l96,32
+                                                c1.088,0.384,2.24,0.555,3.371,0.555c1.28,0,2.539-0.235,3.755-0.661l85.333-32c3.541-1.344,6.123-4.437,6.763-8.171
+                                                l42.667-245.333C405.696,116.075,404.843,112.896,402.816,110.485z" />
+                                    </g>
+                            </svg>
+                        </div>
+                        <div class="mt-4 font-bold">Developer Experience</div>
+                        <div class="text-center mt-2 text-gray-600">Tailwind is designed with your happiness in mind.
+                            The ease of performing changes is refreshing.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 sm:w-1/3">
+                    <div
+                        class="bg-white h-full p-8 border-b-4 border-pink-500 rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8">
+                        <div class="bg-gray-200 w-16 text-indigo-700 rounded-full p-2">
+                            <svg class="h-12 w-12 pt-1 fill-current" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M487.915,3.52C485.888,1.28,483.008,0,480,0H32c-3.029,0-5.888,1.28-7.915,3.52c-2.027,2.219-3.008,5.205-2.709,8.213
+                                                L64.043,438.4c0.405,4.16,3.243,7.723,7.232,9.045l192,64c1.088,0.384,2.24,0.555,3.371,0.555c1.28,0,2.539-0.235,3.776-0.683
+                                                l170.667-64c3.797-1.408,6.464-4.885,6.869-8.917l42.667-426.667C490.923,8.747,489.941,5.739,487.915,3.52z M427.349,429.675
+                                                l-160.917,60.352L84.565,429.397L43.755,21.333h424.427L427.349,429.675z" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M402.816,110.485c-2.027-2.411-5.035-3.797-8.171-3.797h-256c-5.888,0-10.667,4.779-10.667,10.667
+                                                s4.779,10.667,10.667,10.667h243.307l-14.827,85.312H149.312c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667
+                                                h214.101l-20.907,120.171l-76.075,28.523l-86.549-28.864l-9.451-47.253c-1.131-5.76-6.699-9.536-12.544-8.363
+                                                c-5.76,1.152-9.515,6.763-8.363,12.544l10.667,53.333c0.747,3.755,3.456,6.805,7.083,8.021l96,32
+                                                c1.088,0.384,2.24,0.555,3.371,0.555c1.28,0,2.539-0.235,3.755-0.661l85.333-32c3.541-1.344,6.123-4.437,6.763-8.171
+                                                l42.667-245.333C405.696,116.075,404.843,112.896,402.816,110.485z" />
+                                    </g>
+                            </svg>
+                        </div>
+                        <div class="mt-4 font-bold">Mobile Friendly</div>
+                        <div class="text-center mt-2 text-gray-600">Modern applications demand mobile-friendly &
+                            Tailwind's responsive modifiers make it easy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 py-12 mt-12 w-full flex flex-col items-center border-t-2 border-black">
+            <h2 class="font-bold text-xl text-gray-300">Sign up to download free PDF</h2>
+
+            <form class="max-w-xl w-full text-gray-200 mt-4 px-8 md:px-0" action="#" method="post">
+                <div class="flex flex-col md:flex-row">
+                    <label for="first_name" class="sr-only">First Name</label>
+                    <input class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2"
+                        type="text" placeholder="First name" id="first_name">
+
+                    <label for="last_name" class="sr-only">Last Name</label>
+                    <input class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2"
+                        type="text" placeholder="Last name" id="last_name">
+                </div>
+                <div class="flex flex-col md:flex-row ">
+                    <label for="email" class="sr-only">Email</label>
+                    <input class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2"
+                        type="email" placeholder="example@email.com" id="email">
+
+                    <label for="title" class="sr-only">Last Name</label>
+                    <input class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2"
+                        type="text" placeholder="Your Title" id="title">
+                </div>
+            </form>
+            <div class="flex flex-col md:flex-row md:-mx-2"><button
+                    class="bg-blue-600 text-sm mt-4 rounded-lg py-2 px-4 w-full text-gray-200 w-full mx-mx-2">Create
+                    Account</button>
+            </div>
+        </div>
+
+    </main>
+    <footer class="bg-gray-800 w-full text-center pb-8">
+        <p class="text-xs text-gray-500 font-light">Copyright 2021 Scrimba & Ville Kurkikangas</p>
+    </footer>
+
+</body>
+
+</html>
